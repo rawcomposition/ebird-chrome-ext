@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "eBird Hotspots Link Modifier",
+  "version": "1.0",
+  "description": "Modifies Bar Charts links to Targets on eBird Hotspots pages.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://ebird.org/hotspots"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
